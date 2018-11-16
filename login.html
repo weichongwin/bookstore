@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>阶梯书城-登录</title>
+
+	<script type="text/javascript" src="jquery-1.12.4.min.js"></script>
+
+</head>
+<body>
+	
+
+	<div class="login_form_bg">
+		<div class="login_form_wrap clearfix">
+			<div class="login_banner fl"></div>
+			<div class="slogan fl">阶梯书城 · 朝梦想攀登</div>
+			<div class="login_form fr">
+				<div class="login_title clearfix">
+					<h1>用户登录</h1>
+		
+				</div>
+				<div class="form_input">
+
+           
+                        <input type="text" name="vc" id="vc" class="code_input" placeholder="请输入验证码">
+                        <!-- <img style="left: 100px;top: 130px;position: absolute" id="verifycode" src="http://108.61.219.68:8000/user/verifycode/" onclick="this.src='http://108.61.219.68:8000/user/verifycode/?'+Math.random()" alt="CheackCode"> -->
+					
+						<input type="button" id="btnLogin" value="登录" class="input_submit">
+			
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<script type="text/javascript">
+	$(function(){
+		$('.btnLogin').click(function () {
+		
+			alert('$$$$$$$$$');
+			$.get('http://108.61.219.68:8000/goods/detail/1/',function (data) {
+				alert(data)
+			})
+// 			var vc = $('.vc').val();
+// 			alert(vc);
+// 			var params = {
+// 				'username':'weichong',
+// 				'password':'ff871fb5f4806abeb6b920a7bc491ea5b6d3a500b57624e023bfe8680a177b3e',
+// 				'csrfmiddlewaretoken':csrf,
+// 				'vc':vc,
+// 			};
+// 			$.post('http://108.61.219.68:8000/user/login/',params,function (data) {
+// 				alert(data.code);
+// 			});
+		});
+	})
+</script>
+</body>
+</html>
